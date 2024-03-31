@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+canvas {
+  display: block;
+}
+
+
+
+#container,
+#content {
+  background: black;
+  position: relative;
+  color: white;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#content {
+  border: solid;
+  border-width: 1px 0 1px 0;
+  border-color: #d1d1d1;
+  height: auto;
+  display: flex;
+}
+
+
+.bottom-right-text {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  max-width: 200px; /* Adjust the max-width as needed */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+/* Add this to your existing styles or create a new stylesheet */
+nav ul li {
+  position: relative;
+}
+
+/* Style for the submenu */
+nav ul li .submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: -1150px; /* Adjust this value to position the submenu to the left */
+  background-color: #fff; /* Adjust the background color as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a box shadow */
+  transition-duration: 1s; /* Adjust the transition time for the first link */
+}
+
+/* Style for the submenu links */
+nav ul li .submenu a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333; /* Adjust the text color as needed */
+  transition: background-color 1s;
+}
+
+/* Hover effect for the submenu links */
+nav ul li .submenu a:hover {
+  background-color: #f0f0f0; /* Adjust the hover background color */
+}
+
+/* Show the submenu when the parent is hovered */
+nav ul li:hover .submenu {
+  display: inline-block;
+}
+
+/* Fade in the submenu links with different transition times */
+nav ul li:hover .submenu a:nth-child(1) {
+  transition-duration: 1s; /* Adjust the transition time for the first link */
+}
+
+nav ul li:hover .submenu a:nth-child(2) {
+  transition-duration: 1.2s; /* Adjust the transition time for the second link */
+}
+
+nav ul li:hover .submenu a:nth-child(3) {
+  transition-duration: 1.5s; /* Adjust the transition time for the third link */
+}
+
+/* Add this to your existing styles or create a new stylesheet */
+
+.description {
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.photo-gallery-container {
+  height: 1000px; /* Set a fixed height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Add this to your existing styles or create a new stylesheet */
+
+.photo-gallery {
+margin-top: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  z-index: 110;
+}
+
+.photo-item {
+  margin: 12px;
+  width: calc(33% - 20px); /* Limit to three photos per row */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  position: relative;
+  z-index: 11;
+  margin-top: 5%;
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: none !important;
+    filter: none !important;
+    position: relative;
+    z-index: 11;
+    max-width: 85%; /* Adjust the maximum width of the image */
+    margin-left: 50px;
+    /* Add this to set a random height for landscape images */
+}
+  

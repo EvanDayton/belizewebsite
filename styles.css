@@ -1,0 +1,86 @@
+:root {
+	--pink: #ff91a4 ;
+	--blue: #427cac;
+}
+
+body {
+	animation: body 20s linear infinite;
+	background: linear-gradient(45deg, var(--blue), var(--pink));
+	background-size: 200% 200%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+    z-index: -1;
+}
+.noise {
+	background-size: 55px 10px;
+	background-repeat: repeat;
+	background-image: -webkit-repeating-radial-gradient(
+			1% 21%,
+			closest-corner,
+			rgba(0, 255, 47, 0.5),
+			rgba(26, 152, 152, 0.5),
+			rgb(0, 255, 238) 1.7%
+		),
+		-webkit-repeating-radial-gradient(51% 51%, closest-corner, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(
+						0,
+						255,
+						0,
+						1
+					)
+					10%);
+	filter: contrast(10) saturate(0);
+	opacity: .0;
+	width: 100vw;
+    z-index: -5;
+	margin-top: 5.2%;
+}
+.noise:after {
+    z-index: -5;
+
+	background-size: 12px 80px;
+	background-repeat: repeat;
+	background-image: -webkit-repeating-radial-gradient(
+			61% 21%,
+			closest-corner,
+			rgba(255, 255, 255, 1),
+			rgba(0, 255, 0, 0.5),
+			rgba(3, 0, 255, 1) 20%
+		),
+		-webkit-repeating-radial-gradient(91% 51%, closest-corner, rgba(255, 255, 255, 1), rgba(255, 255, 1, 0.5), rgba(
+						055,
+						255,
+						255,
+						1
+					)
+					20%);
+	content: "";
+	height: 100vh;
+	left: 0;
+	mix-blend-mode: exclusion;
+	position: absolute;
+	width: 100vw;
+}
+.noise:before {
+    z-index: -1;
+
+	background-size: 15px 13px;
+	background-repeat: repeat;
+	background-image: -webkit-repeating-radial-gradient(
+		21% 21%,
+		closest-corner,
+		rgba(255, 255, 255, 1),
+		rgba(0, 0, 255, 0.5),
+		rgba(3, 0, 255, 1) 20%
+	);
+	content: "";
+	height: 100vh;
+	left: 0;
+	mix-blend-mode: exclusion;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	z-index: 999;
+}
+
+
