@@ -26,8 +26,8 @@ body {
 
 .logo {
     position: fixed;
-    top: 40px;
-    left: 40px;
+    top: 10px;
+    left: 15px;
     z-index: 500;
     width: 150px;
     height: 150px;
@@ -41,7 +41,7 @@ nav {
     top: 45px;
     right: 60px;
     z-index: 120; /* Change z-index to 120 */
-    font-size: 70px;
+    font-size: 22px;
     letter-spacing: 1px;
 
 }
