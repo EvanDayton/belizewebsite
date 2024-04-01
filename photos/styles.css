@@ -111,7 +111,6 @@ margin-top: 20%;
   flex-wrap: wrap;
   justify-content: space-around;
   z-index: 110;
-  margin-left: 450px;
 }
 
 .photo-item {
@@ -153,7 +152,7 @@ nav {
   top: 45px;
   right: 60px;
   z-index: 120; /* Change z-index to 120 */
-  font-size: 70px;
+  font-size: 22px;
   letter-spacing: 1px;
 
 }
