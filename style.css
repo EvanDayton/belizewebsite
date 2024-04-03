@@ -168,3 +168,66 @@ h2 {
 p {
     font-size: 15px;
 }
+
+/* Media queries for iPhones and handheld devices */
+@media only screen and (max-width: 900px) {
+    body{
+        height: 150vh;
+    }
+    .logo {
+        width: 60px; /* Adjust logo width for smaller screens */
+        height: 60px; /* Adjust logo height for smaller screens */
+        top: 5px; /* Adjust logo top position for smaller screens */
+        left: 10px; /* Adjust logo left position for smaller screens */
+    }
+
+    nav {
+        top: 15px; /* Adjust nav top position for smaller screens */
+         /* Adjust nav right position for smaller screens */
+        font-size: 14px; /* Adjust nav font size for smaller screens */
+    }
+
+    nav ul {
+        text-align: right; /* Align the list items to the right */
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%; /* Force items to take up full width */
+        margin-left: 0;
+        padding: 5px 20px;
+        text-decoration: none;
+    }
+
+    .container {
+        padding: 10px; /* Adjust container padding for smaller screens */
+    }
+
+    .text {
+        font-size: 40px; /* Adjust text font size for smaller screens */
+        letter-spacing: 10px; /* Adjust text letter spacing for smaller screens */
+        text-align: center;
+    }
+
+    .new-section {
+        margin-top: 20vh; /* Adjust new-section margin top for smaller screens */
+    }
+
+    .img-container {
+        width: 70%; /* Adjust img-container width for smaller screens */
+    }
+
+    .img-container img {
+        transform: scale(110%); /* Adjust img-container img scale for smaller screens */
+        margin-bottom: 100px;
+    }
+
+    h2 {
+        font-size: 40px; /* Adjust h2 font size for smaller screens */
+        margin-top: 800px !important; /* Adjust h2 margin top for smaller screens */
+    }
+
+    p {
+        font-size: 12px; /* Adjust p font size for smaller screens */
+    }
+}

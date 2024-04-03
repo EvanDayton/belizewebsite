@@ -215,3 +215,72 @@ nav ul li a:hover::before {
   background-color: #d0698b; /* Color of the box */
   opacity: 1; /* Change opacity to fade in */
 }
+
+@media only screen and (max-width: 900px) {
+  .logo {
+      width: 60px; /* Adjust logo width for smaller screens */
+      height: 60px; /* Adjust logo height for smaller screens */
+      top: 5px; /* Adjust logo top position for smaller screens */
+      left: 10px; /* Adjust logo left position for smaller screens */
+  }
+
+  nav {
+      top: 15px; /* Adjust nav top position for smaller screens */
+       /* Adjust nav right position for smaller screens */
+      font-size: 14px; /* Adjust nav font size for smaller screens */
+      margin-right: 370px;
+  }
+
+  nav ul {
+      text-align: right; /* Align the list items to the right */
+  }
+
+  nav ul li {
+      display: block;
+      width: 100%; /* Force items to take up full width */
+      margin-left: 0;
+      padding: 5px 20px;
+      text-decoration: none;
+  }
+
+  .container {
+      padding: 10px; /* Adjust container padding for smaller screens */
+  }
+
+  .text {
+      font-size: 40px; /* Adjust text font size for smaller screens */
+      letter-spacing: 10px; /* Adjust text letter spacing for smaller screens */
+  }
+
+  .photo-item {
+    margin: 12px;
+    width: calc(90% - 20px); /* Limit to three photos per row */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    position: relative;
+    z-index: 11;
+    margin-top: 5%;
+  }
+
+  h2 {
+      font-size: 40px; /* Adjust h2 font size for smaller screens */
+      margin-top: 800px !important; /* Adjust h2 margin top for smaller screens */
+  }
+
+  p {
+      font-size: 12px; /* Adjust p font size for smaller screens */
+  }
+
+  .photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: none !important;
+    filter: none !important;
+    position: relative;
+    z-index: 11;
+    max-width: 85%; /* Adjust the maximum width of the image */
+    margin-left: 20px !important;
+
+    /* Add this to set a random height for landscape images */
+}
+}
