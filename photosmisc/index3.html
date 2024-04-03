@@ -42,6 +42,8 @@
                     const img = document.createElement('img');
                     img.src = filename;
                     img.alt = `Photo ${index + 1}`;
+                    img.loading = 'lazy'; // Lazy loading for images
+
             
                     // Check if the image is landscape (aspect ratio > 1)
                     const aspectRatio = Math.random() * 2 + 0.5; // Random aspect ratio between 0.5 and 2
