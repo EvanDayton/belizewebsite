@@ -124,8 +124,8 @@ nav ul li a:hover::before {
     letter-spacing: 20px;
     text-shadow: 2px 8px #d0698b;
     font-weight: bolder;
-    z-index: 2  ;
-
+    z-index: 2;
+    text-align: center;
 }
 
 .new-section {
