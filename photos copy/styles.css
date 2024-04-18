@@ -168,9 +168,11 @@ img {
 }
 
 .playlist-page img {
-  max-width: 150%; /* Adjust max-width to make the image bigger */
+  max-width: 100%;
   height: auto;
   margin-bottom: 10px;
+  align-content: center;
+  display: flex;
 }
 
 .playlist-page p {
